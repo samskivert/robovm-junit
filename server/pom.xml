@@ -3,24 +3,24 @@
 
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.robovm</groupId>
-    <artifactId>robovm-junit-parent</artifactId>
-    <version>1.14.1-SNAPSHOT</version>
+    <groupId>com.bugvm</groupId>
+    <artifactId>bugvm-junit-parent</artifactId>
+    <version>1.0.10-SNAPSHOT</version>
   </parent>
 
-  <artifactId>robovm-junit-server</artifactId>
+  <artifactId>bugvm-junit-server</artifactId>
   <packaging>jar</packaging>
 
   <dependencies>
     <dependency>
-      <groupId>org.robovm</groupId>
-      <artifactId>robovm-rt</artifactId>
-      <version>${project.version}</version>      
+      <groupId>com.bugvm</groupId>
+      <artifactId>bugvm-rt</artifactId>
+      <version>${bugvm.version}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.robovm</groupId>
-      <artifactId>robovm-junit-protocol</artifactId>
+      <groupId>com.bugvm</groupId>
+      <artifactId>bugvm-junit-protocol</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
@@ -46,7 +46,7 @@
               <relocations>
                 <relocation>
                   <pattern>rx</pattern>
-                  <shadedPattern>org.robovm.junit.deps.rx</shadedPattern>
+                  <shadedPattern>com.bugvm.junit.deps.rx</shadedPattern>
                 </relocation>
               </relocations>
               <filters>

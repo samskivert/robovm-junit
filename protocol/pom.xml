@@ -3,12 +3,12 @@
 
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.robovm</groupId>
-    <artifactId>robovm-junit-parent</artifactId>
-    <version>1.14.1-SNAPSHOT</version>
+    <groupId>com.bugvm</groupId>
+    <artifactId>bugvm-junit-parent</artifactId>
+    <version>1.0.10-SNAPSHOT</version>
   </parent>
 
-  <artifactId>robovm-junit-protocol</artifactId>
+  <artifactId>bugvm-junit-protocol</artifactId>
   <packaging>jar</packaging>
 
   <dependencies>
@@ -36,11 +36,11 @@
               <relocations>
                 <relocation>
                   <pattern>com.google.gson</pattern>
-                  <shadedPattern>org.robovm.junit.deps.com.google.gson</shadedPattern>
+                  <shadedPattern>com.bugvm.junit.deps.com.google.gson</shadedPattern>
                 </relocation>
                 <relocation>
                   <pattern>biz.source_code.base64Coder</pattern>
-                  <shadedPattern>org.robovm.junit.deps.biz.source_code.base64Coder</shadedPattern>
+                  <shadedPattern>com.bugvm.junit.deps.biz.source_code.base64Coder</shadedPattern>
                 </relocation>
               </relocations>
               <filters>

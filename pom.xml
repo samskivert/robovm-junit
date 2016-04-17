@@ -9,19 +9,19 @@
   </parent>
 
   <properties>
-    <robovm.version>${project.version}</robovm.version>
+    <bugvm.version>1.0.9</bugvm.version>
   </properties>
 
-  <groupId>org.robovm</groupId>
-  <artifactId>robovm-junit-parent</artifactId>
-  <version>1.14.1-SNAPSHOT</version>
-  <name>RoboVM Junit parent</name>
+  <groupId>com.bugvm</groupId>
+  <artifactId>bugvm-junit-parent</artifactId>
+  <version>1.0.10-SNAPSHOT</version>
+  <name>BugVM Junit parent</name>
   <packaging>pom</packaging>
 
   <scm>
-    <connection>scm:git:git://github.com/robovm/robovm-junit.git</connection>
-    <developerConnection>scm:git:git@github.com:robovm/robovm-junit.git</developerConnection>
-    <url>https://github.com/robovm/robovm-junit.git</url>
+    <connection>scm:git:git://github.com/bugvm/bugvm-junit.git</connection>
+    <developerConnection>scm:git:git@github.com:bugvm/bugvm-junit.git</developerConnection>
+    <url>https://github.com/bugvm/bugvm-junit.git</url>
   </scm>
 
   <licenses>
@@ -44,14 +44,14 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>org.robovm</groupId>
-        <artifactId>robovm-rt</artifactId>
-        <version>${robovm.version}</version>
+        <groupId>com.bugvm</groupId>
+        <artifactId>bugvm-rt</artifactId>
+        <version>${bugvm.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.robovm</groupId>
-        <artifactId>robovm-compiler</artifactId>
-        <version>${robovm.version}</version>
+        <groupId>com.bugvm</groupId>
+        <artifactId>bugvm-compiler</artifactId>
+        <version>${bugvm.version}</version>
       </dependency>
       <dependency>
         <groupId>io.reactivex</groupId>

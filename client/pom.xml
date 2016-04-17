@@ -3,29 +3,29 @@
 
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.robovm</groupId>
-    <artifactId>robovm-junit-parent</artifactId>
-    <version>1.14.1-SNAPSHOT</version>
+    <groupId>com.bugvm</groupId>
+    <artifactId>bugvm-junit-parent</artifactId>
+    <version>1.0.10-SNAPSHOT</version>
   </parent>
 
-  <artifactId>robovm-junit-client</artifactId>
+  <artifactId>bugvm-junit-client</artifactId>
   <packaging>jar</packaging>
 
   <dependencies>
     <dependency>
-      <groupId>org.robovm</groupId>
-      <artifactId>robovm-junit-protocol</artifactId>
+      <groupId>com.bugvm</groupId>
+      <artifactId>bugvm-junit-protocol</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.robovm</groupId>
-      <artifactId>robovm-junit-server</artifactId>
+      <groupId>com.bugvm</groupId>
+      <artifactId>bugvm-junit-server</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.robovm</groupId>
-      <artifactId>robovm-compiler</artifactId>
+      <groupId>com.bugvm</groupId>
+      <artifactId>bugvm-compiler</artifactId>
       <scope>provided</scope>
     </dependency>
     <dependency>
@@ -33,9 +33,9 @@
       <artifactId>rxjava</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.robovm</groupId>
-      <artifactId>robovm-maven-resolver</artifactId>
-      <version>${robovm.version}</version>
+      <groupId>com.bugvm</groupId>
+      <artifactId>bugvm-maven-resolver</artifactId>
+      <version>${project.version}</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -57,7 +57,7 @@
               <relocations>
                 <relocation>
                   <pattern>rx</pattern>
-                  <shadedPattern>org.robovm.junit.deps.rx</shadedPattern>
+                  <shadedPattern>com.bugvm.junit.deps.rx</shadedPattern>
                 </relocation>
               </relocations>
               <filters>
